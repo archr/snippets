@@ -1,0 +1,25 @@
+# Function
+snippet imp
+  import ${1} from '${2:module_name}';
+
+# React component
+snippet rcc
+  import React from 'react';
+
+  let ${1:ClassName} = React.createClass({
+
+    render: () {
+      return (
+        ${0:<div />}
+      );
+    }
+
+  });
+
+  module.exports = $1;
+
+#set state
+snippet sst
+  setState({
+    ${1}: ${2}
+  });
