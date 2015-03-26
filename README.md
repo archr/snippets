@@ -1,7 +1,10 @@
 # snippets
 Lista de snippets para es6, react, express, koa.
 
-Basado en [justinj/vim-react-snippets](https://github.com/justinj/vim-react-snippets).
+Basado en:
+  - [justinj/vim-react-snippets](https://github.com/justinj/vim-react-snippets)
+  - [honza/vim-snippets](https://github.com/honza/vim-snippets/)
+
 
 ### Dependencias
 * [neosnippet](https://github.com/Shougo/neosnippet.vim)

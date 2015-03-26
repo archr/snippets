@@ -1,0 +1,20 @@
+snippet rtr
+  import Router from 'koa-router';
+
+  let router = new Router();
+
+  ${0:}
+
+  export default router;
+
+
+snippet rtr-get
+  router.get('/${1}', function *() {
+    ${0:this.body = 'Ok';}
+  });
+
+
+snippet rtr-post
+  router.post('/${1}', function *() {
+    ${0:this.body = 'Ok';}
+  });
