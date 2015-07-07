@@ -1,0 +1,72 @@
+snippet irc
+  import React from 'react';
+
+  export default class ${1:ClassName} extends React.Component {
+    constructor() {
+      super();
+    }
+
+    render() {
+      return (
+        ${2:<div />}
+      );
+    }
+  }
+
+snippet cons 
+  constructor() {
+    ${1}
+  }
+
+snippet pt
+  static propTypes = {
+    ${1}: React.PropTypes.${2:string}
+  }
+
+snippet sst 
+  this.setState({
+   ${1}: ${2}
+  });
+
+snippet state 
+  let ${1} = this.state;
+
+snippet cdm 
+  componentDidMount() {
+    ${1}
+  }
+
+snippet cdup 
+  componentDidUpdate() {
+    ${1}
+  }
+
+snippet cwm 
+  componentWillMount() {
+    ${1}
+  }
+
+snippet cwr 
+  componentWillUnmount() {
+    ${1}
+  }
+
+snippet cwu 
+  componentWillUpdate(nextProps, nextState) {
+    ${1}
+  }
+
+snippet scu 
+  shouldComponentUpdate: (nextProps, nextState) {
+    ${1}
+  }
+
+snippet fup 
+  this.forceUpdate();
+
+snippet ren 
+  render() {
+   return (
+    ${1:<div />}
+   );
+  }
