@@ -31,6 +31,9 @@ snippet sst
 snippet state 
   let ${1} = this.state;
 
+snippet bin
+  this.${1:funtionName} = this.$1.bind(this);
+
 snippet cdm 
   componentDidMount() {
     ${1}

@@ -1,25 +1,15 @@
-# Function
 snippet imp
   import ${1} from '${2:module_name}';
 
-# React component
-snippet rcc
-  import React from 'react';
+snippet exp
+  export ${1}
 
-  let ${1:ClassName} = React.createClass({
+snippet exd 
+  export default ${1}
 
-    render: () {
-      return (
-        ${0:<div />}
-      );
-    }
+snippet arrow
+  (${1:param}) => {
+    ${2}
+  }
 
-  });
 
-  module.exports = $1;
-
-#set state
-snippet sst
-  setState({
-    ${1}: ${2}
-  });
