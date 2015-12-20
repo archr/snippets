@@ -1,0 +1,14 @@
+snippet it
+  it('should ${1}', (done) => {
+    done();
+  });
+
+snippet descr 
+  describe('${1}', () => {
+    ${2}
+  });
+
+snippet bef
+  before((done) => {
+    ${1}
+  });
