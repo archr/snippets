@@ -1,10 +1,7 @@
 snippet irc
   import React from 'react'
 
-  export default class ${1:ClassName} extends React.Component {
-    constructor() {
-      super()
-    }
+  class ${1:ClassName} extends React.Component {
 
     render() {
       return (
@@ -13,65 +10,80 @@ snippet irc
     }
   }
 
-snippet cons 
+  export default ${1}
+
+snippet ircn
+  import React rom 'react'
+  import { View } from 'react-native'
+
+  class ${1:ClassName} extends React.Component {
+    render() {
+      return (
+        ${2:<View />}
+      )
+    }
+  }
+
+  export default ${1}
+
+snippet cons
   constructor() {
-    ${1}
+    super()
+
+    this.state = {${1}}
   }
 
 snippet pt
   static propTypes = {
-    ${1}: React.PropTypes.${2:string}
+    ${1}: PropTypes.${2:string}
   }
 
-snippet sst 
+snippet sst
   this.setState({
    ${1}: ${2}
-  });
+  })
 
-snippet state 
-  let ${1} = this.state;
+snippet stt
+  const {${1}} = this.state
 
-snippet bin
-  this.${1:funtionName} = this.$1.bind(this);
+snippet bnd
+  this.${1:funtionName} = this.$1.bind(this)
 
-snippet cdm 
+snippet cdm
   componentDidMount() {
     ${1}
   }
 
-snippet cdup 
+snippet cdu
   componentDidUpdate() {
     ${1}
   }
 
-snippet cwm 
+snippet cwm
   componentWillMount() {
     ${1}
   }
 
-snippet cwr 
+snippet cwum
   componentWillUnmount() {
     ${1}
   }
 
-snippet cwu 
-  componentWillUpdate(nextProps, nextState) {
+snippet cwup
+  componentWillUpdate(nextProps, ${1:nextState}) {
+    ${2}
+  }
+
+snippet scu
+  shouldComponentUpdate(nextProps) {
     ${1}
   }
 
-snippet scu 
-  shouldComponentUpdate: (nextProps, nextState) {
-    ${1}
-  }
-
-snippet fup 
-  this.forceUpdate();
-
-snippet ren 
+snippet ren
   render() {
-   return (
-    ${1:<div />}
-   );
+    return (
+      ${1:<div />}
+    )
   }
 
 snippet iprop
