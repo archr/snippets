@@ -7,7 +7,7 @@ snippet exp
 snippet exd
   export default ${1}
 
-snippet arr
+snippet arrf
   (${1:param}) => {
     ${2}
   }
@@ -24,3 +24,8 @@ snippet disp
   const { dispatch } = this.props
 
   dispatch(${1:action})
+
+snippet eaf
+  export default async function ${1} ($2) {
+    ${3}
+  }
