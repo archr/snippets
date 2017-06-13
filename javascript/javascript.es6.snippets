@@ -26,6 +26,11 @@ snippet disp
   dispatch(${1:action})
 
 snippet eaf
-  export default async function ${1} ($2) {
+  export default async function ${1} (${2}) {
+    ${3}
+  }
+
+snippet efu
+  export default function ${1} (${2}) {
     ${3}
   }
